@@ -22,7 +22,7 @@ public class InventoryService {
 	}
 
 	/**
-	 * <p>Method related to findByInventory query {@link it.rea.videoRental.repository.InventoryRepository.findByInventoryId}</p>
+	 * <p>Method related to findByInventory query {@link it.rea.videoRental.repository.InventoryRepository#findByInventoryId(long)}</p>
 	 * @param id long
 	 * @return optional Inventory Entity
 	 */

@@ -28,7 +28,7 @@ public class StaffService {
 	}
 	
 	/**
-	 * <p>Method related to getFilmsByActor query {@link it.rea.videoRental.repository.FilmStaffRepository.getFilmsByActorsAndGenre}
+	 * <p>Method related to getFilmsByActor query {@link it.rea.videoRental.repository.FilmStaffRepository#getFilmsByActorsAndGenre(Collection, String)}
 	 * </p>
 	 * @param staffIds
 	 * @param genre
@@ -39,7 +39,7 @@ public class StaffService {
 	}
 		
 	/**
-	 * <p>Method related to staffIdByLastName {@link it.rea.videoRental.repository.StaffRepository.staffIdByLastname}</p>
+	 * <p>Method related to staffIdByLastName {@link it.rea.videoRental.repository.StaffRepository#staffIdByLastname(String)}</p>
 	 * @param lastname String
 	 * @return optional ids <List<Long>>
 	 */

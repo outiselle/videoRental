@@ -17,7 +17,7 @@ public class StoreService {
 	@Autowired RentalRepository rentalRepository;
 	
 	/**
-	 * <p>Service related to findByStoreId query {@link it.rea.videoRental.repository.StoreRepository}
+	 * <p>Service related to findByStoreId query {@link it.rea.videoRental.repository.StoreRepository#findByStoreId(long)}
 	 * </p>
 	 * @param id long
 	 * @return store entity
@@ -27,7 +27,7 @@ public class StoreService {
 	}
 	
 	/**
-	 * <p>Method related to findByStoreName keyword {@link it.rea.videoRental.repository.StoreRepository.findByStoreName}
+	 * <p>Method related to findByStoreName keyword {@link it.rea.videoRental.repository.StoreRepository#findByStoreName(String)}
 	 * </p>
 	 * @param storeName String
 	 * @return optional Store Entity
@@ -37,7 +37,7 @@ public class StoreService {
 	}
 	
 	/**
-	 * <p>Method related to countCustomerByStore query {@link it.rea.videoRental.repository.RentalRepository.countCustomerByStore}
+	 * <p>Method related to countCustomerByStore query {@link it.rea.videoRental.repository.RentalRepository#countCustomerByStore(String)}
 	 * </p>
 	 * @param store String
 	 * @return customer count by store
@@ -47,7 +47,7 @@ public class StoreService {
 	}
 	
 	/**
-	 * <p>Method related to countRentalsInRange query {@link it.rea.videoRental.repository.RentalRepository.countRentalsInRange}
+	 * <p>Method related to countRentalsInRange query {@link it.rea.videoRental.repository.RentalRepository#countRentalsInRange(long, LocalDateTime, LocalDateTime)}
 	 * </p>
 	 * @param id long
 	 * @param start LocalDateTime

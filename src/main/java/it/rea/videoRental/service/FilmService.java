@@ -35,7 +35,7 @@ public class FilmService {
 	}
 	
 	/**
-	 * <p>Service related to fiByFilmId query {@link it.rea.videoRental.repository.FilmRepository}
+	 * <p>Service related to fiByFilmId query {@link it.rea.videoRental.repository.FilmRepository#findByFilmId(long)}
 	 * </p>
 	 * @param id long
 	 * @return optional Film Entity
@@ -45,7 +45,7 @@ public class FilmService {
 	}
 	
 	/**
-	 * <p>Service related to getFilmResponse query {@link it.rea.videoRental.repository.FilmRepository}
+	 * <p>Service related to getFilmResponse query {@link it.rea.videoRental.repository.FilmRepository#getFilmResponse(long)}
 	 * </p>
 	 * @param id
 	 * @return optional FilmResponse
@@ -55,7 +55,7 @@ public class FilmService {
 	}
 	
 	/**
-	 * <p>Method related to getFilmStoreResponse query {@link it.rea.videoRental.repository.InventoryRepository.getFilmStoreResponse}
+	 * <p>Method related to getFilmStoreResponse query {@link it.rea.videoRental.repository.InventoryRepository#getFilmStoreResponse(long)}
 	 * @param id long
 	 * @return FilmStoreResponse <List>
 	 */
@@ -64,7 +64,7 @@ public class FilmService {
 	}
 	
 	/**
-	 * <p>Method related to getFilmResponseByLanguage query {@link it.rea.videoRental.repository.FilmRepository.getFilmResponseByLanguage}
+	 * <p>Method related to getFilmResponseByLanguage query {@link it.rea.videoRental.repository.FilmRepository#getFilmResponseByLanguage(long)}
 	 * @param id long
 	 * @return FilmResponse <List>
 	 */
@@ -75,7 +75,7 @@ public class FilmService {
 	
 	/**
 	 * <p>Service related to getFilmsFilmsById query 
-	 * {@link it.rea.videoRental.repository.FilmStaffRepository.getFilmsByIds}
+	 * {@link it.rea.videoRental.repository.FilmStaffRepository#getFilmsByIds(Collection)}
 	 * </p>
 	 * @param filmIds
 	 * @return FilmResponse {@link it.rea.videoRental.payload.response.FilmResponse}
@@ -86,7 +86,7 @@ public class FilmService {
 	
 	/**
 	 * <p>Service related to getFilmsFromActors query
-	 * {@link it.rea.videoRental.repository.FilmStaffRepository.getFilmsFromActors}
+	 * {@link it.rea.videoRental.repository.FilmStaffRepository#getFilmsFromActors(Collection)}
 	 * </p>
 	 * @param actorsSurnames
 	 * @return ActorsFilm {@link it.rea.videoRental.payload.response.ActorsFilm}
@@ -96,7 +96,7 @@ public class FilmService {
 	}
 	
 	/**
-	 * <p>Service related to filmsMaxRent query {@link it.rea.videoRental.repository.FilmRepository}
+	 * <p>Service related to filmsMaxRent query {@link it.rea.videoRental.repository.FilmRepository#filmsMaxRent()}
 	 * Return list order by rental count than take first and others with same rent value
 	 * </p>
 	 * @return FilmMaxRentResponse <List>

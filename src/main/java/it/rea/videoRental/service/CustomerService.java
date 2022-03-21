@@ -18,7 +18,7 @@ public class CustomerService {
 	@Autowired CustomerRepository customerRepository;
 	
 	/**
-	 * <p>Method related to findByCustomerId query {@link it.rea.videoRental.repository.CustomerRepository}
+	 * <p>Method related to findByCustomerId query {@link it.rea.videoRental.repository.CustomerRepository#findById(Long)}
 	 * @param id
 	 * @return optional Customer Entity
 	 */
@@ -27,7 +27,7 @@ public class CustomerService {
 	}
 	
 	/**
-	 * <p>Method related to filmRentByCustomerId query {@link it.rea.videoRental.repository.RentalRepository}
+	 * <p>Method related to filmRentByCustomerId query {@link it.rea.videoRental.repository.RentalRepository#filmsRentByCustomerId(long)}
 	 * @param id long
 	 * @return FilmRentResponse <List>
 	 */

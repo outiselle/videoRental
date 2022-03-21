@@ -23,7 +23,7 @@ public class RentalService {
 	}
 	
 	/**
-	 * <p>Method related to getRentOutByCustomerAndInventory query {@link it.rea.videoRental.repository.RentalRepository.getRentOutByCustomerAndInventory}</p>
+	 * <p>Method related to getRentOutByCustomerAndInventory query {@link it.rea.videoRental.repository.RentalRepository#getRentOutByCustomerAndInventory(Long, Long)}</p>
 	 * @param customerId long
 	 * @param inventoryId long
 	 * @return optional Rental
@@ -33,7 +33,7 @@ public class RentalService {
 	}
 	
 	/**
-	 * <p>Method related to getRentalsOutByInventoryId query {@link it.rea.videoRental.repository.RentalRepository.getRentalsOutByInventoryId}</p>
+	 * <p>Method related to getRentalsOutByInventoryId query {@link it.rea.videoRental.repository.RentalRepository#getRentalsOutByInventoryId(long)}</p>
 	 * @param invId long
 	 * @return optional Rental Entity
 	 */
