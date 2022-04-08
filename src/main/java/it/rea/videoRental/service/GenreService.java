@@ -15,7 +15,6 @@ public class GenreService {
 	
 	/**
 	 * <p>Service related to finById query 
-	 * @see org.springframework.data.repository.CrudRepository#findById(java.io.Serializable)
 	 * </p>
 	 * @param id long
 	 * @return genre entity

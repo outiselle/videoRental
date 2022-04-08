@@ -31,7 +31,7 @@ public class StaffController {
 	 * If more actors have same surname and act in film with the same genre all of them are included in list
 	 * </p>
 	 * @param request {@link it.rea.videoRental.payload.request.ActorGenreRequest}
-	 * @return ActorGenreResponse<List> {@link it.rea.videoRental.payload.response.ActorGenreResponse}
+	 * @return ActorGenreResponse list {@link it.rea.videoRental.payload.response.ActorGenreResponse}
 	 */
 	@GetMapping("/actor-genre") 
 	public ResponseEntity<?> actoreGenre(@Valid @RequestBody ActorGenreRequest request){

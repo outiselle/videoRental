@@ -20,7 +20,7 @@ public class StaffService {
 	
 	/**
 	 * <p>Method related to jpa keyword find by property lastname in Staff Entity
-	 * @param lastname
+	 * @param lastname for actor. Type String
 	 * @return optional staff List
 	 */
 	public Optional<List<Staff>> getStaffByLastname(String lastname){
@@ -30,9 +30,9 @@ public class StaffService {
 	/**
 	 * <p>Method related to getFilmsByActor query {@link it.rea.videoRental.repository.FilmStaffRepository#getFilmsByActorsAndGenre(Collection, String)}
 	 * </p>
-	 * @param staffIds
-	 * @param genre
-	 * @return ActorGenreResponse <List>
+	 * @param staffIds list of staff ids. Type long
+	 * @param genre name. Type String
+	 * @return ActorGenreResponse list of object
 	 */
 	public List<ActorGenreResponse> getFilmsByActorsAndGenre(Collection<Long> staffIds, String genre){
 		return filmStaffRepository.getFilmsByActorsAndGenre(staffIds, genre);
@@ -41,7 +41,7 @@ public class StaffService {
 	/**
 	 * <p>Method related to staffIdByLastName {@link it.rea.videoRental.repository.StaffRepository#staffIdByLastname(String)}</p>
 	 * @param lastname String
-	 * @return optional ids <List<Long>>
+	 * @return optional ids list type long
 	 */
 	public Optional<List<Long>> staffIdByLastname(String lastname){
 		return staffRepository.staffIdByLastname(lastname);

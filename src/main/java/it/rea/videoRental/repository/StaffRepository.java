@@ -18,7 +18,7 @@ public interface StaffRepository extends JpaRepository<Staff, Long> {
 	/**
 	 * <p>This query get staff ids from the given surnames</p>
 	 * @param lastname String
-	 * @return
+	 * @return list of long staff ids
 	 */
 	@Query(value = "SELECT s.staffId "
 			+ "FROM Staff s "

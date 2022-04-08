@@ -19,7 +19,7 @@ public class CustomerService {
 	
 	/**
 	 * <p>Method related to findByCustomerId query {@link it.rea.videoRental.repository.CustomerRepository#findById(Long)}
-	 * @param id
+	 * @param id of customer. Type long
 	 * @return optional Customer Entity
 	 */
 	public Optional<Customer> getCustomerById(long id){
@@ -29,7 +29,7 @@ public class CustomerService {
 	/**
 	 * <p>Method related to filmRentByCustomerId query {@link it.rea.videoRental.repository.RentalRepository#filmsRentByCustomerId(long)}
 	 * @param id long
-	 * @return FilmRentResponse <List>
+	 * @return FilmRentResponse list of object
 	 */
 	public List<FilmRentResponse> filmsRentByCustomerId (long id){
 		return rentalRepository.filmsRentByCustomerId(id);

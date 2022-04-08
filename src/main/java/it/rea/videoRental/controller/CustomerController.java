@@ -24,7 +24,7 @@ public class CustomerController {
 	 * <p>Find films rent by customer with the given id
 	 * </p>
 	 * @param customerId long
-	 * @return FilmRentResponse <List>
+	 * @return FilmRentResponse list
 	 */
 	@GetMapping("/find-all-films-rent-by-one-customer/{customerId}")
 	public ResponseEntity<?> filmRentByCustomerId (@PathVariable long customerId){

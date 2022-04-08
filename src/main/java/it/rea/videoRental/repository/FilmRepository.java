@@ -36,7 +36,7 @@ public interface FilmRepository extends JpaRepository<Film, Long>{
 	/**
 	 * <p>This query get film info and store into FilmResponse by the given language id</p>
 	 * @param id long
-	 * @return FilmResponse <List>
+	 * @return FilmResponse list
 	 */
 	@Query(value = "SELECT new it.cgmconsulting.examDroetti.payload.response.FilmResponse("
 			+ "f.filmId, "

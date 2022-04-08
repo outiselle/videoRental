@@ -110,7 +110,7 @@ public class FilmController {
 	 * <p>Get film info by id
 	 * </p>
 	 * @param filmId long 
-	 * @return filmResponse <List> if exists {@link it.rea.videoRental.payload.response.FilmResponse}
+	 * @return filmResponse list if exists {@link it.rea.videoRental.payload.response.FilmResponse}
 	 * or httpStatus for errors
 	 */
 	@GetMapping("/get-film/{filmId}") 
@@ -128,7 +128,7 @@ public class FilmController {
 	 * <p>Get store name and film info by the given filmId
 	 * </p>
 	 * @param filmId long 
-	 * @return filmStoreResponse <List> if exists {@link it.rea.videoRental.payload.response.FilmStoreResponse} 
+	 * @return filmStoreResponse list if exists {@link it.rea.videoRental.payload.response.FilmStoreResponse} 
 	 * or httpStatus for errors
 	 */
 	@GetMapping("/find-film-in-store/{filmId}") 
@@ -146,8 +146,8 @@ public class FilmController {
 	/**
 	 * <p>Get film info passing a collection of actors surnames
 	 * </p>
-	 * @param actorsSurnames Collection<String> 
-	 * @return filmResponse <List> if exists {@link it.rea.videoRental.payload.response.FilmResponse}
+	 * @param actorsSurnames Collection of string
+	 * @return filmResponse list if exists {@link it.rea.videoRental.payload.response.FilmResponse}
 	 * or httpStatus for errors
 	 */
 	@GetMapping("/find-films-by-actors")
@@ -173,7 +173,7 @@ public class FilmController {
 	 * <p>Find film by given language
 	 * </p>
 	 * @param languageId long
-	 * @return filmResponse <List> if exists {@link it.rea.videoRental.payload.response.FilmResponse}
+	 * @return filmResponse list if exists {@link it.rea.videoRental.payload.response.FilmResponse}
 	 */
 	@GetMapping("/find-films-by-language/{languageId}") 
 	public ResponseEntity<?> getFilmByLang (@PathVariable long languageId){

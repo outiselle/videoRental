@@ -12,7 +12,7 @@ public interface StoreRepository extends JpaRepository<Store, Long>{
 	
 	/**
 	 * <p>Find store by the given id through jpa keyword</p>
-	 * @param id
+	 * @param id long
 	 * @return optional store entity
 	 */
 	Optional<Store> findByStoreId(long id);

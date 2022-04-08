@@ -17,7 +17,7 @@ public interface InventoryRepository extends JpaRepository<Inventory, Long>{
 	/**
 	 * <p>This query get film_id, title and store_name where to found by the given film id</p>
 	 * @param id long
-	 * @return FilmStoreResponse <List>
+	 * @return FilmStoreResponse list
 	 */
 	@Query(value = "SELECT new it.cgmconsulting.examDroetti.payload.response.FilmStoreResponse("
 			+ "i.filmId.filmId, "
